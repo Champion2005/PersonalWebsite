@@ -11,8 +11,8 @@ const App = () => {
 
       <div className="w3-container w3-cell">
         <div className="w3-bar w3-center w3-padding-16">
-          <a className="w3-bar-item w3-button w3-hover-none w3-hover-text w3-hover-text-red w3-text-white w3-right" href="https://www.linkedin.com/in/aditya-patel52/" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a className="w3-bar-item w3-button w3-hover-none w3-hover-text w3-hover-text-red w3-text-white w3-right" href="https://github.com/Champion2005" target="_blank" rel="noreferrer">Github</a>
+            <a className="w3-bar-item w3-button w3-xlarge w3-hover-none w3-hover-text w3-hover-text-red w3-text-white w3-right" href="https://www.linkedin.com/in/aditya-patel52/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a className="w3-bar-item w3-button w3-xlarge w3-hover-none w3-hover-text w3-hover-text-red w3-text-white w3-right" href="https://github.com/Champion2005" target="_blank" rel="noreferrer">Github</a>
         </div>
       </div>
     </div>
