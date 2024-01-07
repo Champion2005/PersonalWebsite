@@ -1,4 +1,5 @@
 {
+  "homepage": "https://Champion2005.github.io/PersonalWebsite",
   "name": "portfolio-website",
   "version": "0.1.0",
   "private": true,
@@ -11,7 +12,6 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://champion2005.github.io/PersonalWebsite",
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
