@@ -28,7 +28,7 @@ const App = () => {
     </div>
 
     <h2 className="w3-center w3-text-white"><b>Hello.</b> I like programming.</h2>
-    <h3 className="w3-center w3-text-white">I am a <b>first</b> year computer science student the University of Windsor</h3>
+    <h3 className="w3-center w3-text-white">I am a <b>first</b> year computer science student at the University of Windsor</h3>
       <div className="w3-center"><a className="w3-text-white w3-button w3-xlarge w3-hover-none w3-hover-text w3-hover-text-red" href='https://apatel.xyz/resume.pdf' target='_blank' rel='noopener noreferrer'><u>Resume</u></a></div>
     </>
   );
