@@ -13,6 +13,7 @@ const App = () => {
         <div className="w3-bar w3-center w3-padding-16">
             <a className="w3-bar-item w3-button w3-xlarge w3-hover-none w3-hover-text w3-hover-text-red w3-text-white w3-right" href="https://www.linkedin.com/in/aditya-patel52/" target="_blank" rel="noreferrer">LinkedIn</a>
             <a className="w3-bar-item w3-button w3-xlarge w3-hover-none w3-hover-text w3-hover-text-red w3-text-white w3-right" href="https://github.com/Champion2005" target="_blank" rel="noreferrer">Github</a>
+            <a className="w3-bar-item w3-button w3-xlarge w3-hover-none w3-hover-text w3-hover-text-red w3-text-white w3-right" href='https://apatel.xyz/resume.pdf' target='_blank' rel='noopener noreferrer'><u>Resume</u></a>
         </div>
       </div>
     </div>
@@ -29,7 +30,6 @@ const App = () => {
 
     <h2 className="w3-center w3-text-white"><b>Hello.</b> I like programming.</h2>
     <h3 className="w3-center w3-text-white">I am a <b>first</b> year computer science student at the University of Windsor</h3>
-      <div className="w3-center"><a className="w3-text-white w3-button w3-xlarge w3-hover-none w3-hover-text w3-hover-text-red" href='https://apatel.xyz/resume.pdf' target='_blank' rel='noopener noreferrer'><u>Resume</u></a></div>
     </>
   );
 }
