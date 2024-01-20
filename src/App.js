@@ -43,7 +43,7 @@ const App = () => {
     </div>
 
     <div className="w3-center w3-cell-row" style={{ 'padding-top': '50px' }}>
-      <div className="w3-cell">
+      <div className="w3-cell w3-mobile">
         <div className="w3-round-xlarge w3-animate-opacity w3-animate-zoom" style={{"background-color":"#284756", "margin":"20px"}}>
           <div className="w3-container" style={{'padding':'8px'}}>
               <img id="pfp" src={dt} className="w3-left" alt="" style={{ 'margin-right': '16px' }}></img>
@@ -54,7 +54,7 @@ const App = () => {
           </div>
         </div>
       </div>
-      <div className="w3-cell">
+      <div className="w3-cell w3-mobile">
         <div className="w3-round-xlarge w3-animate-opacity w3-animate-zoom" style={{"background-color":"#284756", "margin":"20px"}}>
           <div className="w3-container" style={{'padding':'8px'}}>
               <img id="pfp" src={sh} className="w3-left" alt="" style={{ 'margin-right': '16px' }}></img>
@@ -65,7 +65,7 @@ const App = () => {
           </div>
         </div>
       </div>
-      <div className="w3-cell">
+      <div className="w3-cell w3-mobile">
         <div className="w3-round-xlarge w3-animate-opacity w3-animate-zoom" style={{"background-color":"#284756", "margin":"20px"}}>
           <div className="w3-container" style={{'padding':'8px'}}>
               <img id="pfp" src={lj} className="w3-left" alt="" style={{ 'margin-right': '16px' }}></img>
@@ -76,7 +76,7 @@ const App = () => {
           </div>
         </div>
       </div>
-      <div className="w3-cell">
+      <div className="w3-cell w3-mobile">
         <div className="w3-round-xlarge w3-animate-opacity w3-animate-zoom" style={{"background-color":"#284756", "margin":"20px"}}>
           <div className="w3-container" style={{'padding':'8px'}}>
               <img id="pfp" src={dr} className="w3-left" alt="" style={{ 'margin-right': '16px' }}></img>
