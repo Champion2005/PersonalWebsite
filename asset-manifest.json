@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.624b1c63.css",
-    "main.js": "/static/js/main.b49be0dd.js",
-    "static/js/787.861fdc3f.chunk.js": "/static/js/787.861fdc3f.chunk.js",
+    "main.css": "/static/css/main.c5fb296d.css",
+    "main.js": "/static/js/main.90b85f78.js",
+    "static/media/Donald_Trump.jpg": "/static/media/Donald_Trump.9ad98e1f3d4dd872a91c.jpg",
+    "static/media/Drake.jpg": "/static/media/Drake.547248eacc6b4b4d18d1.jpg",
+    "static/media/LeBron_James.jpg": "/static/media/LeBron_James.f65591eed606c9d7cb4d.jpg",
+    "static/media/Stephen_Hawking.jpg": "/static/media/Stephen_Hawking.70d0b69326a4b40e85ea.jpg",
     "index.html": "/index.html",
-    "main.624b1c63.css.map": "/static/css/main.624b1c63.css.map",
-    "main.b49be0dd.js.map": "/static/js/main.b49be0dd.js.map",
-    "787.861fdc3f.chunk.js.map": "/static/js/787.861fdc3f.chunk.js.map"
+    "main.c5fb296d.css.map": "/static/css/main.c5fb296d.css.map",
+    "main.90b85f78.js.map": "/static/js/main.90b85f78.js.map"
   },
   "entrypoints": [
-    "static/css/main.624b1c63.css",
-    "static/js/main.b49be0dd.js"
+    "static/css/main.c5fb296d.css",
+    "static/js/main.90b85f78.js"
   ]
 }
