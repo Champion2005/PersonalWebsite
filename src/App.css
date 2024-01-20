@@ -26,3 +26,15 @@
 .wave .shape-fill {
   fill: darkslategrey;
 }
+
+#navbar {
+  background-color: #284756;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+#pfp {
+  width: 100%;
+  max-width: 64px;
+  border-radius: 50%;
+}

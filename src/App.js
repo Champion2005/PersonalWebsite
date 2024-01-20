@@ -1,7 +1,16 @@
 import './App.css';
 
+import dt from './imgs/Donald_Trump.jpg';
+import sh from './imgs/Stephen_Hawking.jpg';
+import lj from './imgs/LeBron_James.jpg';
+import dr from './imgs/Drake.jpg';
+
 
 const App = () => {
+  const years = ['1st', '2nd', '3rd', '4th'];
+  let curYear = '1st';
+  curYear = new Date().getMonth() === 8 ? years[new Date().getFullYear() - 2024] : years.find(() => {return curYear});
+
   return (
     <>
     <div className="w3-cell-row header">
@@ -10,10 +19,10 @@ const App = () => {
       </div>
 
       <div className="w3-container w3-cell">
-        <div className="w3-bar w3-center w3-padding-16">
-            <a className="w3-bar-item w3-button w3-xlarge w3-hover-none w3-hover-text w3-hover-text-red w3-text-white w3-right" href="https://www.linkedin.com/in/aditya-patel52/" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a className="w3-bar-item w3-button w3-xlarge w3-hover-none w3-hover-text w3-hover-text-red w3-text-white w3-right" href="https://github.com/Champion2005" target="_blank" rel="noreferrer">Github</a>
-            <a className="w3-bar-item w3-button w3-xlarge w3-hover-none w3-hover-text w3-hover-text-red w3-text-white w3-right" href='https://apatel.xyz/resume.pdf' target='_blank' rel='noopener noreferrer'>Resume</a>
+        <div className="w3-bar w3-center">
+            <a id="navbar" className="w3-bar-item w3-button w3-round-large w3-xlarge w3-hover-teal w3-hover-text w3-text-white w3-right" href="https://www.linkedin.com/in/aditya-patel52/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a id="navbar" className="w3-bar-item w3-button w3-round-large w3-xlarge w3-hover-teal w3-hover-text w3-text-white w3-right" href="https://github.com/Champion2005" target="_blank" rel="noreferrer">Github</a>
+            <a id="navbar" className="w3-bar-item w3-button w3-round-large w3-xlarge w3-hover-teal w3-hover-text w3-text-white w3-right" href='https://apatel.xyz/resume.pdf' target='_blank' rel='noopener noreferrer'>Resume</a>
         </div>
       </div>
     </div>
@@ -28,8 +37,57 @@ const App = () => {
       </div>
     </div>
 
-    <h2 className="w3-center w3-text-white"><b>Hello.</b> I like programming.</h2>
-    <h3 className="w3-center w3-text-white">I am a <b>first</b> year computer science student at the University of Windsor</h3>
+    <div className="w3-margin-top w3-center w3-text-white">
+      <h2><b>Hello.</b> I like programming.</h2>
+      <h3>I am a <b>{curYear}</b> year computer science student at the University of Windsor.</h3>
+    </div>
+
+    <div className="w3-center w3-cell-row" style={{ 'padding-top': '50px' }}>
+      <div className="w3-cell">
+        <div className="w3-round-xlarge w3-animate-opacity w3-animate-zoom" style={{"background-color":"#284756", "margin":"20px"}}>
+          <div className="w3-container" style={{'padding':'8px'}}>
+              <img id="pfp" src={dt} className="w3-left" alt="" style={{ 'margin-right': '16px' }}></img>
+              <p className="w3-left w3-text-white w3-xlarge" style={{ 'line-height': '16px' }}>Donald J. Trump | ★★★★★</p>
+          </div>
+          <div className="w3-container" style={{ 'padding': '8px' }}>
+            <p className="w3-left-align w3-text-white w3-large">"Let me tell you about this guy, really smart, incredibly smart. He knows what he's doing, always. Every single time, he's just on top of it. Absolutely knows what's going on. Very impressive, believe me."</p>
+          </div>
+        </div>
+      </div>
+      <div className="w3-cell">
+        <div className="w3-round-xlarge w3-animate-opacity w3-animate-zoom" style={{"background-color":"#284756", "margin":"20px"}}>
+          <div className="w3-container" style={{'padding':'8px'}}>
+              <img id="pfp" src={sh} className="w3-left" alt="" style={{ 'margin-right': '16px' }}></img>
+              <p className="w3-left w3-text-white w3-xlarge" style={{ 'line-height': '16px' }}>Stephen Hawking | ★★★★☆</p>
+          </div>
+          <div className="w3-container" style={{ 'padding': '8px' }}>
+              <p className="w3-left-align w3-text-white w3-large">"In all my years, I have seldom encountered an individual so replete with innovation and creativity. His potential is vast and it arouses great anticipation in me to observe what future endeavors he will undertake."</p>
+          </div>
+        </div>
+      </div>
+      <div className="w3-cell">
+        <div className="w3-round-xlarge w3-animate-opacity w3-animate-zoom" style={{"background-color":"#284756", "margin":"20px"}}>
+          <div className="w3-container" style={{'padding':'8px'}}>
+              <img id="pfp" src={lj} className="w3-left" alt="" style={{ 'margin-right': '16px' }}></img>
+              <p className="w3-left w3-text-white w3-xlarge" style={{ 'line-height': '16px' }}>LeBron James | ★★★★★</p>
+          </div>
+          <div className="w3-container" style={{ 'padding': '8px' }}>
+              <p className="w3-left-align w3-text-white w3-large">"Aditya Patel is really killing it in the tech and AI game. The strides he's making are huge, and it's incredible to see his impact. He's changing the game, just like we try to do on the court. Big respect for what he's doing."</p>
+          </div>
+        </div>
+      </div>
+      <div className="w3-cell">
+        <div className="w3-round-xlarge w3-animate-opacity w3-animate-zoom" style={{"background-color":"#284756", "margin":"20px"}}>
+          <div className="w3-container" style={{'padding':'8px'}}>
+              <img id="pfp" src={dr} className="w3-left" alt="" style={{ 'margin-right': '16px' }}></img>
+              <p className="w3-left w3-text-white w3-xlarge" style={{ 'line-height': '16px' }}>Anita Max Wynn | ★★★★★</p>
+          </div>
+          <div className="w3-container" style={{ 'padding': '8px' }}>
+              <p className="w3-left-align w3-text-white w3-large">"Always a great feeling to see Canadian talent getting the spotlight. Aditya Patel, man, he's having real motion out here. Love to see it, representing us on the global stage."</p>
+          </div>
+        </div>
+      </div>
+    </div>
     </>
   );
 }
