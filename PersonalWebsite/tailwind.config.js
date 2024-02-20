@@ -6,15 +6,7 @@ export default {
   ],
   theme: {
     
-    extend: {
-      colors: {
-        'blue': '#22577A',
-        'teal': '#38A3A5',
-        'aqua': '#57CC99',
-        'lime': '#80ED99',
-        'pale': '#C7F9CC',
-      },
-    },
+    extend: {},
   },
   plugins: [],
 }

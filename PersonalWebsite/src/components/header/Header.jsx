@@ -4,10 +4,10 @@ import { TypeAnimation } from 'react-type-animation';
 export const Header = () => {
   return (
     <>
-      <div className='text-center text-white'>
+      <div className='select-none text-center text-white/80'>
         <Navbar />
-        <h1 className="mx-10 mb-2.5 pt-5 pb-2 text-5xl font-bold bg-gradient-to-br from-teal to-lime bg-clip-text text-transparent">Aditya Patel</h1>
-        <p className="mx-2 mb-0 mb-2 text-xl font-mono">
+        <h1 className="mx-10 mb-2.5 pt-5 pb-2 text-5xl font-bold bg-gradient-to-br from-emerald-600/50 to-emerald-400 bg-clip-text text-transparent">Aditya Patel</h1>
+        <p className="absolute left-0 right-0 text-lg font-mono">
           { "" }
           <TypeAnimation
             sequence={[
@@ -19,7 +19,7 @@ export const Header = () => {
               'System.out.println("Hello World");', 1000,
               'echo "Hello World"', 1000,
             ]}
-            speed={10}
+            speed={20}
             repeat={Infinity}
             showCursor={true}
           />
