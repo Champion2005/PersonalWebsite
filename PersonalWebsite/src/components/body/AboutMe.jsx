@@ -5,7 +5,7 @@ export const AboutMe = () => {
       <div className='text-center text-white/75'>
         <h2 className="text-4xl font-bold">About Me</h2>
         <p className="pt-5 text-xl">
-          I'm a <span className="font-bold">1st</span> year student at the University of Windsor.
+          I'm a <span className="font-bold">1st</span> year CS student at the University of Windsor.
         </p>
       </div>
     </section>
