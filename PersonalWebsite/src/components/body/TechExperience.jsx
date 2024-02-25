@@ -9,12 +9,12 @@ import logo8 from './techlogos/logo8.svg'
 import logo9 from './techlogos/logo9.svg'
 
 
-export const TechSlideshow = () => {
+export const TechExperience = () => {
 
     return (
         <>
             <section className='select-none mt-20 py-10 relative after:absolute after:bg-blue after:inset-0 after:skew-y-3 after:-z-10 after:bg-gradient-to-br after:from-emerald-800 after:to-emerald-500 after:border-y-4 after:border-white/50'>
-                <h2 className="pt-5 text-center text-white/75 text-4xl font-bold">Technologies</h2>
+                <h2 className="pt-5 text-center text-black/75 text-4xl font-bold">Experienced with:</h2>
                 <div className='py-10 px-10'>
                     <div className='flex flex-wrap justify-center'>
                         <img className='h-16 m-2' src={logo1} alt={`logo1`} />

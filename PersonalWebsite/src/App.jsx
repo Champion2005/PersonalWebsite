@@ -3,7 +3,7 @@ import './App.css'
 
 import { Header } from './components/header/Header'
 import { AboutMe } from './components/body/AboutMe'
-import { TechSlideshow } from './components/body/TechSlideshow'
+import { TechExperience } from './components/body/TechExperience'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,7 +12,7 @@ function App() {
     <>
       <Header />
       <AboutMe />
-      <TechSlideshow />
+      <TechExperience />
     </>
   )
 }
