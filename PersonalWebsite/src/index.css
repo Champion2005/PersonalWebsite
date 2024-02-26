@@ -22,12 +22,12 @@
 .fade {
   -webkit-mask: linear-gradient(90deg,
       transparent 1%,
-      #14151a 10%,
-      #25262b 90%,
+      #14151a 20%,
+      #25262b 80%,
       transparent 99%);
   mask: linear-gradient(90deg,
       transparent 1%,
-      #14151a 10%,
-      #25262b 90%,
+      #14151a 20%,
+      #25262b 80%,
       transparent 99%);
 }
