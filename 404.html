@@ -10,11 +10,41 @@
 
 <body>
     <style>
-        .mono {
+        html {
+            background: url(shock.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .text {
+            margin: 0;
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, 0);
             color: red;
+            font-family: monospace;
+            font-size: 20rem;
+        }
+
+        @media (width <=700px) or (height <=500px) {
+            .text {
+                font-size: 10rem;
+            }
+        }
+        @media (height <=900px) {
+            .text {
+                top: 50%;
+            }
         }
     </style>
-    <h1 class="mono">404</h1>
+    <h1 class="text">404</h1>
 </body>
 
 </html>
