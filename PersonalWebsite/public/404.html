@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="404.css" />
+    <title>404 :(</title>
+</head>
+
+<body>
+    <style>
+        html {
+            background: url(shock.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .text {
+            margin: 0;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, 0);
+            color: red;
+            font-family: monospace;
+            font-size: 15rem;
+        }
+
+        @media (width <=700px) or (height <=600px) {
+            .text {
+                font-size: 10rem;
+            }
+        }
+        @media (height <=1000px) {
+            .text {
+                top: 50%;
+            }
+        }
+    </style>
+    <h1 class="text">404</h1>
+</body>
+
+</html>
