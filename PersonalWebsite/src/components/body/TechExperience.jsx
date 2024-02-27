@@ -19,7 +19,7 @@ export const TechExperience = () => {
                 <h2 className="pt-5 text-center text-black/75 text-4xl font-bold">Experienced With</h2>
 
                 <div className='py-10 self-center w-full md:w-9/12 lg:w-[700px] fade'>
-                    <Slider width="7rem">
+                    <Slider width="7rem" duration={20}>
                         <Slider.Slide>
                             <img className='h-16' src={logo1} alt={`logo1`} />
                         </Slider.Slide>
