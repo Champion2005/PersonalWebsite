@@ -15,8 +15,8 @@ const myProjects = [
 
 const ProjectCard = ({ name, description, link=null }) => {
     return (
-        <div className='bg-emerald-200 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 hover:bg-emerald-100 p-2 text-black/75'>
-            <div className='flex justify-between'>
+        <div className='bg-white/50 rounded-lg shadow-lg backdrop-blur-sm hover:backdrop-blur-none hover:shadow-xl hover:scale-105 p-2 text-black/75'>
+            <div className='relative flex justify-between'>
             <h3 className='text-xl font-bold'><a href={link} target="_blank"><u>{name}</u></a></h3>
             </div>
             <p className='text-sm font-mono'>{description}</p>
