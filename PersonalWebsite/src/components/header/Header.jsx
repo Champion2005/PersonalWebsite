@@ -7,9 +7,9 @@ export const Header = () => {
       <div className='flex flex-col h-dvh content-center select-none text-center text-white/80'>
         <Navbar />
         <div className='flex flex-col justify-center grow'>
-          <p className='pt-5 text-2xl font-mono'>I am</p>
-          <h1 className="mx-10 mb-3 pb-3 text-5xl md:text-7xl font-extrabold bg-gradient-to-br from-emerald-900 to-emerald-400 bg-clip-text text-transparent">Aditya Patel</h1>
-          <p className="text-lg md:text-2xl font-mono">
+          <p className='pt-5 text-2xl 2xl:text-4xl font-mono'>I am</p>
+          <h1 className="mx-10 mb-3 pb-3 text-5xl md:text-7xl 2xl:text-9xl font-extrabold bg-gradient-to-br from-emerald-900 to-emerald-400 bg-clip-text text-transparent">Aditya Patel</h1>
+          <p className="text-lg md:text-2xl 2xl:text-4xl font-mono">
             {""}
             <TypeAnimation
               sequence={[
