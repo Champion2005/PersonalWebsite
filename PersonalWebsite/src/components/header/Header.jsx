@@ -8,7 +8,7 @@ export const Header = () => {
         <Navbar />
         <div className='flex flex-col justify-center grow'>
           <p className='pt-5 text-2xl 2xl:text-4xl font-mono'>I am</p>
-          <h1 className="mx-10 mb-3 pb-3 text-5xl md:text-7xl 2xl:text-9xl font-extrabold bg-gradient-to-br from-emerald-900 to-emerald-400 bg-clip-text text-transparent">Aditya Patel</h1>
+          <h1 className="mx-10 mb-3 pb-3 text-5xl md:text-7xl 2xl:text-9xl 2xl:pb-6 font-extrabold bg-gradient-to-br from-emerald-900 to-emerald-400 bg-clip-text text-transparent">Aditya Patel</h1>
           <p className="text-lg md:text-2xl 2xl:text-4xl font-mono">
             {""}
             <TypeAnimation
@@ -27,8 +27,8 @@ export const Header = () => {
             />
           </p>
 
-          <p className='mt-12 font-mono text-sm p-1'>Scroll</p>
-          <div className='m-12 mt-4 p-4 self-center bg-transparent border-4 border-gray-500/20 rounded-full drop-shadow-2xl animate-bounce'>
+          <div className='text-white/50 m-20 p-4 self-center flex flex-col items-center animate-bounce'>
+            <p className='font-mono text-sm p-1'>Scroll</p>
             <svg xmlns="http://www.w3.org/2000/svg" className="min-w-6 size-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
             </svg>
