@@ -1,5 +1,3 @@
-import Slider from 'react-infinite-logo-slider'
-
 const myProjects = [
     {
         name: 'Remora',
