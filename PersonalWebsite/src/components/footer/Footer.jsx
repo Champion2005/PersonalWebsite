@@ -4,7 +4,7 @@ import { CopyToClipboard } from 'react-copy-to-clipboard';
 export const Footer = () => {
     const [copyState, setCopyState] = useState('Copy Email')
 
-    const email = "adityapatel0905@gmail.com";
+    const email = "patel@apatel.xyz";
 
     const handleCopy = () => {
         setCopyState("Copied!");
