@@ -7,7 +7,7 @@ import './Header.css'
 export const Header = () => {
   return (
     <>
-      <img className="absolute inset-0 w-full h-auto -z-10 aspect-auto	opacity-10" src={CurveLine}></img>
+      <img className="absolute inset-0 w-full h-auto aspect-auto opacity-10 -z-10 " src={CurveLine}></img>
       <div className='flex flex-col h-dvh content-center select-none text-center text-white/80'>
         <Navbar />
         <div className='flex flex-col justify-center grow'>
