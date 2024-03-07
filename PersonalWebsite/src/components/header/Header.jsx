@@ -7,7 +7,7 @@ import './Header.css'
 export const Header = () => {
   return (
     <>
-      <img className="absolute inset-0 w-full h-auto aspect-auto opacity-10 -z-10 " src={CurveLine}></img>
+      <img className="absolute right-[25%] scale-150 w-full h-auto aspect-auto opacity-10 -z-10" src={CurveLine}></img>
       <div className='flex flex-col h-dvh content-center select-none text-center text-white/80'>
         <Navbar />
         <div className='flex flex-col justify-center grow'>
@@ -21,9 +21,9 @@ export const Header = () => {
                 'System.out.println("Student");', 1000,
                 'println!("Founder?");', 1000,
                 'console.log("Web Dev");', 1000,
-                'printf("Genius\\n");', 1000,
+                'printf("Genius. And humble.\\n");', 1000,
                 'echo "Naval Warfare Officer"', 1000,
-                'cout << "Hello World! ✌️" << endl;', 1000,
+                'cout << "Hello World" << endl;', 1000,
               ]}
               speed={20}
               repeat={Infinity}
