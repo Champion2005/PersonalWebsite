@@ -21,8 +21,8 @@ export const Header = () => {
                 'System.out.println("Student");', 1000,
                 'println!("Founder?");', 1000,
                 'console.log("Web Dev");', 1000,
-                'printf("Genius. And humble.\\n");', 1000,
-                'echo "Naval Warfare Officer"', 1000,
+                'printf("Genius.\\n");', 1000,
+                'echo "Humble."', 1000,
                 'cout << "Hello World" << endl;', 1000,
               ]}
               speed={20}

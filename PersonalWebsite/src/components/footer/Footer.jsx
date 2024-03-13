@@ -21,7 +21,7 @@ export const Footer = () => {
                 <div className="flex justify-between gap-2">
                     <p className="mt-4">{email}</p>
                     <CopyToClipboard text={email} onCopy={(text, result) => handleCopy()}>
-                        <button className="border-2 border-gray-300/10 mt-3 py-1 px-2 rounded-lg">{copyState}</button>
+                        <button className="border-2 border-gray-300/10 mt-3 py-1 px-2 rounded-lg hover:scale-105 hover:bg-gray-400/10">{copyState}</button>
                     </CopyToClipboard>
                 </div>
             </div>
