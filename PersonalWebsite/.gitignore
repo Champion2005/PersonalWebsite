@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 
 # Ignore projects... theyre closed source hehe
-projects/*
+src/projects/*
