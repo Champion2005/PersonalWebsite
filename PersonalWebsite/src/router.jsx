@@ -5,7 +5,7 @@ import {
 // Pages
 import App from './App.jsx'
 import BlackjackApp from "./projects/blackjack-teacher/BlackjackApp.jsx";
-import BDGTXApp from "./projects/bdgtx/bdgtxApp.jsx";
+import BDGTXApp from "./projects/bdgtx/BDGTXApp.jsx";
 
 export const router = createHashRouter([
     {
