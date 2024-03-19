@@ -1,5 +1,5 @@
 import {
-    createBrowserRouter,
+    createHashRouter,
 } from "react-router-dom";
 
 // Pages
@@ -7,12 +7,10 @@ import App from './App.jsx'
 import BlackjackApp from "./projects/blackjack-teacher/BlackjackApp.jsx";
 import BDGTXApp from "./projects/bdgtx/bdgtxApp.jsx";
 
-
-export const router = createBrowserRouter([
+export const router = createHashRouter([
     {
         path: "/",
         element: <App />,
-        errorElement: null,
     },
     {
         path: "/blackjack",
