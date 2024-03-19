@@ -5,6 +5,8 @@ export const Home = () => {
         <>
             <Header/>
             <h1 className="text-white text-6xl text-center">Home</h1>
+
+            
         </>
     )
 }
