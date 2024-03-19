@@ -57,7 +57,7 @@ export const Projects = () => {
             <section className='flex flex-col select-none mt-20 2xl:mt-32 py-10 relative after:absolute after:inset-0 after:-skew-y-3 after:-z-10 after:bg-gradient-to-br after:from-emerald-800 after:to-emerald-500 after:border-y-4 after:border-white/50'>
                 <h2 className="pt-5 text-center text-black/75 text-4xl font-bold">Projects</h2>
 
-                <div className='w-full lg:w-6/12 2xl:w-4/12 grid grid-cols-1 lg:grid-cols-2 justify-items-stretch gap-5 px-5 py-10 self-center w-full'>
+                <div className='w-full lg:w-6/12 2xl:w-4/12 grid grid-cols-1 lg:grid-cols-2 justify-items-stretch gap-5 px-5 py-10 self-center'>
                     {myProjects.map(project => (
                         <ProjectCard name={project.name} description={project.description} link={project.link} />
                     ))}
@@ -65,7 +65,7 @@ export const Projects = () => {
 
                 <p className="pt-5 text-center text-black/75 text-2xl font-bold">🚧 Coming Soon 🚧</p>
 
-                <div className='w-full lg:w-6/12 2xl:w-4/12 grid grid-cols-1 lg:grid-cols-2 justify-items-stretch gap-5 px-5 py-10 self-center w-full'>
+                <div className='w-full lg:w-6/12 2xl:w-4/12 grid grid-cols-1 lg:grid-cols-2 justify-items-stretch gap-5 px-5 py-10 self-center'>
                     {comingSoon.map(project => (
                         <ProjectCard name={project.name} description={project.description} link={project.link} />
                     ))}
