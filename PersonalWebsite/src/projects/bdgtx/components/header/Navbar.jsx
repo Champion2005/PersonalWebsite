@@ -1,14 +1,14 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-export const Navbar = (curPath) => {
+export const Navbar = (props) => {
     const Home = "/#/bdgtx/home"
     const Goals = "/#/bdgtx/goals"
     const Stats = "/#/bdgtx/stats"
     const Blog = "/#/bdgtx/blog"
 
     const handleButtonStyle = (path) => {
-        if (curPath.curPath == path) {
+        if (props.curPath == path) {
             return 'bg-blue-500 hover:bg-blue-300'
         }
         else {

@@ -58,8 +58,8 @@ export const Projects = () => {
                 <h2 className="pt-5 text-center text-black/75 text-4xl font-bold">Projects</h2>
 
                 <div className='w-full lg:w-6/12 2xl:w-4/12 grid grid-cols-1 lg:grid-cols-2 justify-items-stretch gap-5 px-5 py-10 self-center'>
-                    {myProjects.map(project => (
-                        <ProjectCard name={project.name} description={project.description} link={project.link} />
+                    {myProjects.map((project, index) => (
+                        <ProjectCard key={index} name={project.name} description={project.description} link={project.link} />
                     ))}
                 </div>
 
