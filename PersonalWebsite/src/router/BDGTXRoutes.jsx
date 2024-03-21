@@ -1,8 +1,8 @@
 // Pages
-import { Home } from "../projects/bdgtx/pages/Home.jsx";
-import { Stats } from "../projects/bdgtx/pages/Stats.jsx";
-import { Goals } from "../projects/bdgtx/pages/Goals.jsx";
-import { Blog } from "../projects/bdgtx/pages/Blog.jsx";
+import { Home } from "../projects/bdgtx/components/pages/Home.jsx";
+import { Stats } from "../projects/bdgtx/components/pages/Stats.jsx";
+import { Goals } from "../projects/bdgtx/components/pages/Goals.jsx";
+import { Blog } from "../projects/bdgtx/components/pages/Blog.jsx";
 
 // BDGTX Routes
 export const bdgtxRoutes = [

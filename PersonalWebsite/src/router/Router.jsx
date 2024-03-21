@@ -1,5 +1,5 @@
 import {
-    createBrowserRouter,
+    createBrowserRouter, createHashRouter,
 } from "react-router-dom";
 
 
@@ -25,7 +25,7 @@ const Handle404 = () => {
     }
 }
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
     {
         path: "/",
         element: <App />,
