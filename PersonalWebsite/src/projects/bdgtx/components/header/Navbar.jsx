@@ -20,10 +20,10 @@ export const Navbar = (props) => {
         <>
             <div className="mt-10">
                 <nav className="text-black flex my-4 justify-center gap-2 sm:gap-8">
-                    <a href={Home} className={'outline-emerald-900 font-mono text-sm px-2 py-1 rounded-lg ' + handleButtonStyle('/home')}>Home</a>
-                    <a href={Goals} className={'outline-emerald-900 font-mono text-sm px-2 py-1 rounded-lg ' + handleButtonStyle('/goals')}>Goals</a>
-                    <a href={Stats} className={'outline-emerald-900 font-mono text-sm px-2 py-1 rounded-lg ' + handleButtonStyle('/stats')}>Stats</a>
-                    <a href={Blog} className={'outline-emerald-900 font-mono text-sm px-2 py-1 rounded-lg ' + handleButtonStyle('/blog')}>Blog</a>
+                    <Link to={Home} className={'outline-emerald-900 font-mono text-sm px-2 py-1 rounded-lg ' + handleButtonStyle('/home')}>Home</Link>
+                    <Link to={Goals} className={'outline-emerald-900 font-mono text-sm px-2 py-1 rounded-lg ' + handleButtonStyle('/goals')}>Goals</Link>
+                    <Link to={Stats} className={'outline-emerald-900 font-mono text-sm px-2 py-1 rounded-lg ' + handleButtonStyle('/stats')}>Stats</Link>
+                    <Link to={Blog} className={'outline-emerald-900 font-mono text-sm px-2 py-1 rounded-lg ' + handleButtonStyle('/blog')}>Blog</Link>
                 </nav>
             </div>
         </>

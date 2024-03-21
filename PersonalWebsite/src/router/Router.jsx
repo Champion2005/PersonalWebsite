@@ -35,6 +35,6 @@ export const router = createBrowserRouter([
         path: "/bdgtx",
         element: <BDGTXApp />,
     },
-    ...blackjackRoutes,
     ...bdgtxRoutes,
+    ...blackjackRoutes,
 ]);
