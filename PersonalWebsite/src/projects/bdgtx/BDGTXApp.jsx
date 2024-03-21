@@ -1,7 +1,7 @@
 
 export const BDGTXApp = () => {
     const onStart = () => {
-        window.location.href = "/#/bdgtx/home";
+        window.location.href = "/bdgtx/home";
     }
 
     return (
@@ -17,7 +17,7 @@ export const BDGTXApp = () => {
 
 export const BDGTXError = () => {
     const onReset = () => {
-        window.location.href = "/#/bdgtx/home";
+        window.location.href = "/bdgtx/home";
     }
 
     return (

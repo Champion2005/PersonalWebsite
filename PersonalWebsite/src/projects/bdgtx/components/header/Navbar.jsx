@@ -2,10 +2,10 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 export const Navbar = (props) => {
-    const Home = "/#/bdgtx/home"
-    const Goals = "/#/bdgtx/goals"
-    const Stats = "/#/bdgtx/stats"
-    const Blog = "/#/bdgtx/blog"
+    const Home = "/bdgtx/home"
+    const Goals = "/bdgtx/goals"
+    const Stats = "/bdgtx/stats"
+    const Blog = "/bdgtx/blog"
 
     const handleButtonStyle = (path) => {
         if (props.curPath == path) {
