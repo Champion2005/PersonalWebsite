@@ -14,12 +14,12 @@ const myProjects = [
 const comingSoon = [
     {
         name: 'BDGTX',
-        link: 'https://apatel.xyz/#/bdgtx',
+        link: 'https://apatel.xyz/bdgtx',
         description: 'BDGTX is a all-in-one budget tool to help plan out expenses, investments and savings.'
     },
     {
         name: 'Blackjack Teacher',
-        link: 'https://apatel.xyz/#/blackjack',
+        link: 'https://apatel.xyz/blackjack',
         description: 'Blackjack Teacher is an interactive and engaging platform to learn statistically correct play, fast.'
     },
     {
