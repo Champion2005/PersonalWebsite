@@ -3,6 +3,7 @@ import { Home } from "../projects/bdgtx/components/pages/Home.jsx";
 import { Stats } from "../projects/bdgtx/components/pages/Stats.jsx";
 import { Goals } from "../projects/bdgtx/components/pages/Goals.jsx";
 import { Blog } from "../projects/bdgtx/components/pages/Blog.jsx";
+import { Login } from "../projects/bdgtx/components/pages/Login.jsx";
 
 // BDGTX Routes
 export const bdgtxRoutes = [
@@ -21,5 +22,9 @@ export const bdgtxRoutes = [
     {
         path: "/bdgtx/blog",
         element:  <Blog />,
-    }
+    },
+    {
+        path: "/bdgtx/login",
+        element:  <Login />,
+    },
 ]

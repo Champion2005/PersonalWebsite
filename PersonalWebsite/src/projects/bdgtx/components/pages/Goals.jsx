@@ -1,13 +1,13 @@
 import { useState } from "react";
-import { Header } from "../header/Header"
+import { Header } from "../header/Header";
 
 const goalsList = [
     {
         title: "Save $1000",
         deadline: null,
         description: "blah blah",
-
-    }
+    },
+    
 ]
 
 const CreateGoal = () => {
@@ -18,7 +18,7 @@ const CreateGoal = () => {
 
     return (
         <>
-            <section className="p-4 m-4 items-center bg-gray-800/40 rounded-xl lg:w-1/3">
+            <section className="lg:self-start p-4 m-4 items-center bg-gray-800/40 rounded-xl lg:w-1/3">
                 <p className="text-2xl text-center font-mono">Create a Goal</p>
                 <form className="flex flex-col items-center mt-2">
                     <div className="flex flex-col justify-center gap-2 mt-4 w-2/3">
@@ -86,7 +86,7 @@ export const Goals = () => {
             <Header />
             <div className="flex justify-center mt-20 text-white">
                 <div className="flex flex-col lg:flex-row w-11/12">
-                    <CreateGoal />
+                    <CreateGoal/>
                     <RenderGoals />
                 </div>
             </div>

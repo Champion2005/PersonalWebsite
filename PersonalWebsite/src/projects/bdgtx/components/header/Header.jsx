@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import LOGO from '../../assets/LOGO4096by1150.png'
 
 import { Navbar } from './Navbar'
@@ -11,13 +12,16 @@ export const Header = () => {
 
     return (
         <>
-            <section className='flex flex-col items-center'>
-                <div>
-                    <a href="https://apatel.xyz/#/bdgtx"><img className='max-h-[10vh]' src={LOGO} alt="logo" /></a>
-                    <p className='-m-4 font-italic text-white font-light text-lg text-center font-mono'>Control your money</p>
+            <section>
+                <div className='flex'>
+                    <div className='grow flex justify-self-start items-center py-4'>
+                        <a href="https://apatel.xyz/bdgtx/home"><img className='max-h-[12vh] -ml-[3vh] md:ml-0' src={LOGO} alt="logo"/></a>
+                        {/* <p className='font-italic text-white font-light text-sm md:text-lg  ml-[3vh] md:ml-0 font-mono'>Control your money</p> */}
+                    </div>
+                    <Link to={'/bdgtx/login'} className='rounded-lg border-2 border-blue-200 bg-blue-500 hover:bg-blue-300 text-white font-mono text-xl px-4 py-1 mx-4 self-center'>Login</Link>
                 </div>    
+                <Navbar curPath={curPath}/>
             </section>
-            <Navbar curPath={curPath}/>
         </>
     )
 }

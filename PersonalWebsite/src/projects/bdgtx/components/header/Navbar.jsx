@@ -9,16 +9,16 @@ export const Navbar = (props) => {
 
     const handleButtonStyle = (path) => {
         if (props.curPath == path) {
-            return 'bg-blue-500 hover:bg-blue-300'
+            return 'border-2 border-blue-200 bg-blue-500 hover:bg-blue-300'
         }
         else {
-            return 'bg-emerald-500 hover:bg-emerald-300'
+            return 'border-2 border-emerald-200 bg-emerald-500 hover:bg-emerald-300'
         }
     }
     
     return (
         <>
-            <div className="mt-10">
+            <div>
                 <nav className="text-black flex my-4 justify-center gap-2 sm:gap-8">
                     <Link to={Home} className={'outline-emerald-900 font-mono text-sm px-2 py-1 rounded-lg ' + handleButtonStyle('/home')}>Home</Link>
                     <Link to={Goals} className={'outline-emerald-900 font-mono text-sm px-2 py-1 rounded-lg ' + handleButtonStyle('/goals')}>Goals</Link>
