@@ -7,7 +7,7 @@ const goalsList = [
         deadline: null,
         description: "blah blah",
     },
-    
+
 ]
 
 const CreateGoal = () => {
@@ -15,6 +15,16 @@ const CreateGoal = () => {
     const descMaxLength = 200;
     const [curTitleLength, setCurTitleLength] = useState(0)
     const [curDescLength, setCurDescLength] = useState(0)
+
+    const titleLimitReachedColor = () => {
+        if (curTitleLength == titleMaxLength) return 'text-red-500 caret-red-500'
+        return 'text-white caret-emerald-500'
+    }
+
+    const descLimitReachedColor = () => {
+        if (curDescLength == descMaxLength) return 'text-red-500 caret-red-500'
+        return 'text-white caret-emerald-500'
+    }
 
     return (
         <>
@@ -24,21 +34,21 @@ const CreateGoal = () => {
                     <div className="flex flex-col justify-center gap-2 mt-4 w-2/3">
                         <p className="text-lg font-mono self-center">Title:</p>
                         <input
-                            className="bg-transparent border-2 border-emerald-500 focus:border-dashed outline-none rounded-lg p-1"
+                            className={"bg-gray-700/40 focus:border-2 focus:border-emerald-500 outline-none rounded-lg p-1 " + titleLimitReachedColor() + ' text-white'}
                             maxLength={titleMaxLength}
                             onInput={(e) => { setCurTitleLength(e.target.value.length) }}>
                         </input>
-                        <p className="text-xs font-mono self-end">{curTitleLength}/{titleMaxLength}</p>
+                        <p className={"text-xs font-mono self-end " + titleLimitReachedColor()}>{curTitleLength}/{titleMaxLength}</p>
                     </div>
 
                     <div className="flex flex-col justify-center gap-2 mt-4 w-2/3">
                         <p className="text-lg font-mono self-center">Description:</p>
                         <textarea
-                            className="bg-transparent border-2 border-emerald-500 focus:border-dashed outline-none rounded-lg p-1"
+                            className={"bg-gray-700/40 focus:border-2 outline-none focus:border-emerald-500 rounded-lg p-1 " + descLimitReachedColor() + ' text-white'}
                             maxLength={descMaxLength}
                             onInput={(e) => { setCurDescLength(e.target.value.length) }}>
                         </textarea>
-                        <p className="text-xs font-mono self-end">{curDescLength}/{descMaxLength}</p>
+                        <p className={"text-xs font-mono self-end " + descLimitReachedColor()}>{curDescLength}/{descMaxLength}</p>
                     </div>
                 </form>
             </section>
@@ -86,7 +96,7 @@ export const Goals = () => {
             <Header />
             <div className="flex justify-center mt-20 text-white">
                 <div className="flex flex-col lg:flex-row w-11/12">
-                    <CreateGoal/>
+                    <CreateGoal />
                     <RenderGoals />
                 </div>
             </div>
