@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import LOGO from '../../assets/LOGO4096by4096.png'
-import LOGO2 from '../../assets/LOGO4096by1150.png'
+import { Link } from 'react-router-dom';
+
+import LOGO from '../../assets/LOGO4096by1150.png'
 
 export const Login = () => {
     const [email, setEmail] = useState('');
@@ -20,34 +21,31 @@ export const Login = () => {
     };
 
     return (
-        <div className="flex flex-col h-screen place-content-center place-items-center md:flex-row ">
-            <div className="max-w-7/12 border-r-2 border-emerald-500">
-                {
-                    window.innerWidth > 1000 ?
-                        <img src={LOGO} alt="logo" className="max-h-screen" /> :
-                        <img src={LOGO2} alt="logo2" className="max-h-[12vh]" />
-                }
+        <div className="flex flex-col h-screen md:flex-row ">
+            <div className="flex place-items-center md:w-7/12 md:border-r-2 md:h-screen md:border-emerald-500">
+                <img src={LOGO} alt="logo2" className="self-center" />
             </div>
-            <div className='flex flex-col items-center font-mono text-white grow'>
-                <h2 className="text-center text-2xl ">Login</h2>
-                <form onSubmit={handleSubmit}>
-                    <div>
-                        <label className='text-lg'>Email: </label>
+            <div className='p-4 flex flex-col justify-center items-center font-mono text-white grow'>
+                <h2 className="text-center text-4xl mb-10">Welcome!</h2>
+                <form className='flex flex-col'onSubmit={handleSubmit}>
+                    <div className='mb-5 flex flex-col items-center'>
+                        <label className='text-lg'>Email</label>
                         <input 
-                            className="p-2 my-2 outline-none  bg-transparent border-2 border-emerald-500 rounded-lg"
+                            className="self-stretch p-2 my-2 outline-none bg-transparent border-2 border-emerald-500 rounded-lg"
                             type="email" 
                             value={email} 
                             onChange={handleEmailChange} />
                     </div>
-                    <div>
-                        <label>Password:</label>
+                    <div className='mb-5 flex flex-col items-center'>
+                        <label className='text-lg'>Password</label>
                         <input 
-
+                            className='self-stretch p-2 my-2 outline-none bg-transparent border-2 border-emerald-500 rounded-lg'
                             type="password" 
                             value={password} 
                             onChange={handlePasswordChange} />
                     </div>
-                    <button type="submit">Login</button>
+                    <button className='mb-2 rounded-lg border-2 border-blue-200 bg-blue-500 hover:bg-blue-300 text-white font-mono text-xl px-4 py-1 self-center' type="submit">Login</button>
+                    <Link to={'/bgdtx/signup'} className='underline text-white font-mono text-lg px-4 py-1 self-center'>Sign Up</Link>
                 </form>
             </div>
         </div>
