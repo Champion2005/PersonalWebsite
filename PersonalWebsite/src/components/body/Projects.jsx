@@ -22,6 +22,9 @@ const comingSoon = [
         link: 'https://apatel.xyz/blackjack',
         description: 'Blackjack Teacher is an interactive and engaging platform to learn statistically correct play, fast.'
     },
+]
+
+const futureProjects = [
     {
         name: 'Remora (Compiled)',
         link: '',
@@ -63,10 +66,18 @@ export const Projects = () => {
                     ))}
                 </div>
 
-                <p className="pt-5 text-center text-black/75 text-2xl font-bold">🚧 Coming Soon 🚧</p>
+                <p className="pt-5 text-center text-black/75 text-2xl font-bold">🚧 Working On 🚧</p>
 
                 <div className='w-full lg:w-6/12 2xl:w-4/12 grid grid-cols-1 lg:grid-cols-2 justify-items-stretch gap-5 px-5 py-10 self-center'>
                     {comingSoon.map(project => (
+                        <ProjectCard name={project.name} description={project.description} link={project.link} />
+                    ))}
+                </div>
+
+                <p className="pt-5 text-center text-black/75 text-2xl font-bold">🤔 Future Projects 🤔</p>
+
+                <div className='w-full lg:w-6/12 2xl:w-4/12 grid grid-cols-1 lg:grid-cols-2 justify-items-stretch gap-5 px-5 py-10 self-center'>
+                    {futureProjects.map(project => (
                         <ProjectCard name={project.name} description={project.description} link={project.link} />
                     ))}
                 </div>
