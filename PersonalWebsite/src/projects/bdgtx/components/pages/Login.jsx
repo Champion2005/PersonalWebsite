@@ -45,7 +45,7 @@ export const Login = () => {
                             onChange={handlePasswordChange} />
                     </div>
                     <button className='mb-2 rounded-lg border-2 border-blue-200 bg-blue-500 hover:bg-blue-300 text-white font-mono text-xl px-4 py-1 self-center' type="submit">Login</button>
-                    <Link to={'/bgdtx/signup'} className='underline text-white font-mono text-lg px-4 py-1 self-center'>Sign Up</Link>
+                    <Link to={'/bdgtx/signup'} className='underline text-white font-mono text-lg px-4 py-1 self-center'>Sign Up</Link>
                 </form>
             </div>
         </div>

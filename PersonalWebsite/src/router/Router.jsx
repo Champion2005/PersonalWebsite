@@ -14,7 +14,7 @@ const Handle404 = () => {
     // get current url in browser
     const path = window.location.href;
     console.log(path);
-    if (path.includes("bdgtx/")) {
+    if (path.includes("bdgtx")) {
         return (
             <BDGTXError />
         )
