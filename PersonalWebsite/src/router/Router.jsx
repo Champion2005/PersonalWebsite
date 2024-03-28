@@ -2,8 +2,9 @@ import {
     createBrowserRouter,
 } from "react-router-dom";
 
+import App from "../App.jsx";
+import { H404 } from "../404/404.jsx";
 
-import App from '../App.jsx';
 import { blackjackRoutes } from "./BlackjackRoutes.jsx";
 
 import { bdgtxRoutes } from "./BDGTXRoutes.jsx";
@@ -13,14 +14,14 @@ const Handle404 = () => {
     // get current url in browser
     const path = window.location.href;
     console.log(path);
-    if (path.includes("bdgtx")) {
+    if (path.includes("bdgtx/")) {
         return (
             <BDGTXError />
         )
     }
     else {
         return (
-            <App />
+            <H404 />
         )
     }
 }
